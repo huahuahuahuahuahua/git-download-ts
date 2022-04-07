@@ -252,7 +252,7 @@ const taskchangelog = async (cb) => {
     resultArray.push(chunk);
   });
   changelogPipe.on("end", async () => {
-    await fse.createWriteStream(changelogPath).write(resultArray.join(""));
+    await fs.createWriteStream(changelogPath).write(resultArray.join(""));
     cb();
   });
 };
