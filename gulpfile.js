@@ -1,4 +1,5 @@
 const fs = require("fs");
+const fse = require("fs-extra");
 const path = require("path");
 const gulp = require("gulp");
 const { exec } = require("child_process");
@@ -251,7 +252,7 @@ const taskchangelog = async (cb) => {
     resultArray.push(chunk);
   });
   changelogPipe.on("end", async () => {
-    await fs.createWriteStream(changelogPath).write(resultArray.join(""));
+    await fse.createWriteStream(changelogPath).write(resultArray.join(""));
     cb();
   });
 };
@@ -404,5 +405,6 @@ exports.build = gulp.parallel(
 exports.publish = gulp.series(taskUpdateVersion, taskPublish);
 exports.taskUpdateVersion = taskUpdateVersion;
 exports.apiExtractorGenerate = apiExtractorGenerate;
+exports.changelog = taskchangelog;
 exports.dev = taskDev;
 exports.default = (cb) => cb();
