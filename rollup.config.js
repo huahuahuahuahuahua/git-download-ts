@@ -1,7 +1,7 @@
 /*
  * @Author: t_winkjqzhang
  * @Date: 2022-03-31 14:34:38
- * @LastEditTime: 2022-04-07 22:55:29
+ * @LastEditTime: 2022-04-07 23:54:42
  * @Description: Do not edit
  */
 import resolve from "@rollup/plugin-node-resolve";
@@ -9,6 +9,8 @@ import path from "path";
 import commonjs from "rollup-plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import json from "@rollup/plugin-json";
+import babel from "@rollup/plugin-babel";
+import { DEFAULT_EXTENSIONS } from "@babel/core";
 import replace from "@rollup/plugin-replace";
 import { uglify } from "rollup-plugin-uglify";
 import clear from "rollup-plugin-clear";
@@ -43,6 +45,13 @@ let g_d_plugins_01 = [
     },
   }),
   commonjs(), // 配合 commnjs 解析第三方模块
+  babel({
+    babelHelpers: "runtime",
+    // 只转换源代码，不运行外部依赖
+    exclude: "node_modules/**",
+    // babel 默认不支持 ts 需要手动添加
+    extensions: [...DEFAULT_EXTENSIONS, ".ts"],
+  }),
   json(),
 ];
 let g_d_plugins_02 = g_d_plugins_01.concat([uglify()]);
@@ -76,7 +85,7 @@ let g_d_tasks_list = [].concat(
           .filter((n) => n !== name)
           .map((n) => path.resolve(`./src/${n}.ts`))
       ),
-      plugins: g_d_plugins_01.concat(
+      plugins: g_d_plugins_02.concat(
         replace({
           values: d_replace_obj,
           preventAssign: true,

@@ -45,7 +45,6 @@ const taskCleanTypes = () =>
   gulp.src("types", { allowEmpty: true }).pipe(clean());
 
 /** 使用 tsc 输出 .d.ts */
-/** 使用 tsc 输出 .d.ts */
 const taskOutputTypes = (done) => {
   exec(
     `${path.resolve("./node_modules/.bin/tsc")} ${inputFileNameNoExtList
@@ -85,10 +84,10 @@ const taskBuildTsProject = (done) => {
   exec(cmdStr, (err, stdout, stderr) => {
     if (err) {
       console.log(err);
-      console.warn(new Date(), " 打包ts命令执行失败");
+      console.warn(new Date(), " 打包执行失败");
     } else {
       console.log(stdout);
-      console.warn(new Date(), " 打包ts命令执行成功");
+      console.warn(new Date(), " 打包执行成功");
     }
   });
   done();
