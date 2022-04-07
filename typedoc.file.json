@@ -1,0 +1,718 @@
+{
+	"id": 0,
+	"name": "git-download",
+	"kind": 0,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 1,
+			"name": "git-download",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 33,
+					"name": "default",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {},
+					"target": 2
+				},
+				{
+					"id": 19,
+					"name": "INalmalize",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"tags": [
+							{
+								"tag": "msg:",
+								"text": ""
+							},
+							{
+								"tag": "param",
+								"text": "",
+								"param": "repo"
+							},
+							{
+								"tag": "param",
+								"text": "",
+								"param": "dest"
+							},
+							{
+								"tag": "param",
+								"text": "",
+								"param": "opts"
+							},
+							{
+								"tag": "param",
+								"text": "",
+								"param": "fn"
+							},
+							{
+								"tag": "descripttion:",
+								"text": "\n"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 24,
+							"name": "checkout",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "git-download.ts",
+									"line": 17,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 23,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "git-download.ts",
+									"line": 16,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 21,
+							"name": "origin",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "git-download.ts",
+									"line": 14,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 22,
+							"name": "owner",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "git-download.ts",
+									"line": 15,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 20,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "git-download.ts",
+									"line": 13,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 25,
+							"name": "url",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "git-download.ts",
+									"line": 18,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								24,
+								23,
+								21,
+								22,
+								20,
+								25
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "git-download.ts",
+							"line": 12,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 26,
+					"name": "IOpts",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"children": [
+						{
+							"id": 27,
+							"name": "clone",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "git-download.ts",
+									"line": 21,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 28,
+							"name": "headers",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "git-download.ts",
+									"line": 22,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								27,
+								28
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "git-download.ts",
+							"line": 20,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 29,
+					"name": "TAnyFunction",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "git-download.ts",
+							"line": 24,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 30,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "git-download.ts",
+									"line": 24,
+									"character": 27
+								}
+							],
+							"signatures": [
+								{
+									"id": 31,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 32,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isRest": true
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 11,
+					"name": "addProtocal",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "git-download.ts",
+							"line": 147,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 12,
+							"name": "addProtocal",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "msg:",
+										"text": ""
+									},
+									{
+										"tag": "descripttion:",
+										"text": "\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 13,
+									"name": "origin",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 14,
+									"name": "clone",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					]
+				},
+				{
+					"id": 2,
+					"name": "download",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "git-download.ts",
+							"line": 34,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 3,
+							"name": "download",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "msg:",
+										"text": ""
+									},
+									{
+										"tag": "descripttion:",
+										"text": "\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 4,
+									"name": "repo",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 5,
+									"name": "dest",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 6,
+									"name": "opts",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"id": 26,
+										"name": "IOpts"
+									}
+								},
+								{
+									"id": 7,
+									"name": "fn",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"id": 29,
+										"name": "TAnyFunction"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 15,
+					"name": "getUrl",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "git-download.ts",
+							"line": 165,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 16,
+							"name": "getUrl",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "msg:",
+										"text": ""
+									},
+									{
+										"tag": "descripttion:",
+										"text": "\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 17,
+									"name": "repo",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"id": 19,
+										"name": "INalmalize"
+									}
+								},
+								{
+									"id": 18,
+									"name": "clone",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					]
+				},
+				{
+					"id": 8,
+					"name": "normalize",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "git-download.ts",
+							"line": 87,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 9,
+							"name": "normalize",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "msg:",
+										"text": ""
+									},
+									{
+										"tag": "descripttion:",
+										"text": "\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 10,
+									"name": "repo",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 19,
+								"name": "INalmalize"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "References",
+					"kind": 16777216,
+					"children": [
+						33
+					]
+				},
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						19,
+						26
+					]
+				},
+				{
+					"title": "Type aliases",
+					"kind": 4194304,
+					"children": [
+						29
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						11,
+						2,
+						15,
+						8
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "git-download.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 34,
+			"name": "main",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 37,
+					"name": "default",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {},
+					"target": 35
+				},
+				{
+					"id": 35,
+					"name": "main",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "main.ts",
+							"line": 11,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 36,
+							"name": "main",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "References",
+					"kind": 16777216,
+					"children": [
+						37
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						35
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "main.ts",
+					"line": 7,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"kind": 1,
+			"children": [
+				1,
+				34
+			]
+		}
+	]
+}
