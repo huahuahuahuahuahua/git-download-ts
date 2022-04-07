@@ -68,7 +68,7 @@
 							"sources": [
 								{
 									"fileName": "git-download.ts",
-									"line": 17,
+									"line": 20,
 									"character": 2
 								}
 							],
@@ -86,7 +86,7 @@
 							"sources": [
 								{
 									"fileName": "git-download.ts",
-									"line": 16,
+									"line": 19,
 									"character": 2
 								}
 							],
@@ -104,7 +104,7 @@
 							"sources": [
 								{
 									"fileName": "git-download.ts",
-									"line": 14,
+									"line": 17,
 									"character": 2
 								}
 							],
@@ -122,7 +122,7 @@
 							"sources": [
 								{
 									"fileName": "git-download.ts",
-									"line": 15,
+									"line": 18,
 									"character": 2
 								}
 							],
@@ -140,7 +140,7 @@
 							"sources": [
 								{
 									"fileName": "git-download.ts",
-									"line": 13,
+									"line": 16,
 									"character": 2
 								}
 							],
@@ -158,7 +158,7 @@
 							"sources": [
 								{
 									"fileName": "git-download.ts",
-									"line": 18,
+									"line": 21,
 									"character": 2
 								}
 							],
@@ -185,7 +185,7 @@
 					"sources": [
 						{
 							"fileName": "git-download.ts",
-							"line": 12,
+							"line": 15,
 							"character": 17
 						}
 					]
@@ -208,7 +208,7 @@
 							"sources": [
 								{
 									"fileName": "git-download.ts",
-									"line": 21,
+									"line": 24,
 									"character": 2
 								}
 							],
@@ -228,7 +228,7 @@
 							"sources": [
 								{
 									"fileName": "git-download.ts",
-									"line": 22,
+									"line": 25,
 									"character": 2
 								}
 							],
@@ -251,7 +251,7 @@
 					"sources": [
 						{
 							"fileName": "git-download.ts",
-							"line": 20,
+							"line": 23,
 							"character": 17
 						}
 					]
@@ -265,7 +265,7 @@
 					"sources": [
 						{
 							"fileName": "git-download.ts",
-							"line": 24,
+							"line": 27,
 							"character": 12
 						}
 					],
@@ -280,7 +280,7 @@
 							"sources": [
 								{
 									"fileName": "git-download.ts",
-									"line": 24,
+									"line": 27,
 									"character": 27
 								}
 							],
@@ -327,7 +327,7 @@
 					"sources": [
 						{
 							"fileName": "git-download.ts",
-							"line": 147,
+							"line": 150,
 							"character": 16
 						}
 					],
@@ -392,7 +392,7 @@
 					"sources": [
 						{
 							"fileName": "git-download.ts",
-							"line": 34,
+							"line": 37,
 							"character": 16
 						}
 					],
@@ -483,7 +483,7 @@
 					"sources": [
 						{
 							"fileName": "git-download.ts",
-							"line": 165,
+							"line": 168,
 							"character": 16
 						}
 					],
@@ -549,7 +549,7 @@
 					"sources": [
 						{
 							"fileName": "git-download.ts",
-							"line": 87,
+							"line": 90,
 							"character": 16
 						}
 					],
@@ -639,21 +639,117 @@
 		},
 		{
 			"id": 34,
+			"name": "index",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 43,
+					"name": "INalmalize",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {},
+					"target": 19
+				},
+				{
+					"id": 44,
+					"name": "IOpts",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {},
+					"target": 26
+				},
+				{
+					"id": 45,
+					"name": "TAnyFunction",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {},
+					"target": 29
+				},
+				{
+					"id": 41,
+					"name": "addProtocal",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {},
+					"target": 11
+				},
+				{
+					"id": 39,
+					"name": "download",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {},
+					"target": 2
+				},
+				{
+					"id": 42,
+					"name": "getUrl",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {},
+					"target": 15
+				},
+				{
+					"id": 46,
+					"name": "main",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {},
+					"target": 36
+				},
+				{
+					"id": 40,
+					"name": "normalize",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {},
+					"target": 8
+				}
+			],
+			"groups": [
+				{
+					"title": "References",
+					"kind": 16777216,
+					"children": [
+						43,
+						44,
+						45,
+						41,
+						39,
+						42,
+						46,
+						40
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 35,
 			"name": "main",
 			"kind": 1,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 37,
+					"id": 38,
 					"name": "default",
 					"kind": 16777216,
 					"kindString": "Reference",
 					"flags": {},
-					"target": 35
+					"target": 36
 				},
 				{
-					"id": 35,
+					"id": 36,
 					"name": "main",
 					"kind": 64,
 					"kindString": "Function",
@@ -667,7 +763,7 @@
 					],
 					"signatures": [
 						{
-							"id": 36,
+							"id": 37,
 							"name": "main",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -685,14 +781,14 @@
 					"title": "References",
 					"kind": 16777216,
 					"children": [
-						37
+						38
 					]
 				},
 				{
 					"title": "Functions",
 					"kind": 64,
 					"children": [
-						35
+						36
 					]
 				}
 			],
@@ -711,7 +807,8 @@
 			"kind": 1,
 			"children": [
 				1,
-				34
+				34,
+				35
 			]
 		}
 	]

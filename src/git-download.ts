@@ -1,6 +1,9 @@
 import downloadUrl from "download";
 import gitclone from "git-clone";
 import { sync as rm } from "rimraf";
+// const downloadUrl = require("download");
+// const gitclone = require("gitclone");
+// const rm = require("rimraf").sync;
 /**
  * @msg:
  * @param {string} repo

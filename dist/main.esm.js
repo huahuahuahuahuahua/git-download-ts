@@ -4,9 +4,11 @@
  * @LastEditTime: 2022-04-07 02:58:34
  * @Description:
  */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.main = void 0;
 // 静态加载
 function main() {
     console.log("hello world");
 }
-
-export { main as default, main };
+exports.main = main;
+exports.default = main;

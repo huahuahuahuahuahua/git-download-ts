@@ -6,6 +6,7 @@
 ### Bug Fixes
 
 * 修复无法打印changlog问题 11ec919
+* changelog问题 b2f4944
 
 
 ### Features
