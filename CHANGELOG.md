@@ -3,6 +3,11 @@
 # 1.0.0 (2022-04-07)
 
 
+### Bug Fixes
+
+* 修复无法打印changlog问题 11ec919
+
+
 ### Features
 
 * 新增 calculateOneAddOne 计算 1 + 1 方法 3eea441
