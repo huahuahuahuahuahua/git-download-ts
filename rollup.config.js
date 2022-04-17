@@ -1,23 +1,29 @@
 /*
  * @Author: t_winkjqzhang
  * @Date: 2022-03-31 14:34:38
- * @LastEditTime: 2022-04-07 23:54:42
+ * @LastEditTime: 2022-04-13 22:42:28
  * @Description: Do not edit
  */
 import resolve from "@rollup/plugin-node-resolve";
+import babel from "@rollup/plugin-babel";
+import { terser } from "rollup-plugin-terser";
+import serve from "rollup-plugin-serve";
+import livereload from "rollup-plugin-livereload";
 import path from "path";
+import { RollupOptions } from "rollup";
+import rollupTypescript from "rollup-plugin-typescript2";
 import commonjs from "rollup-plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import json from "@rollup/plugin-json";
-import babel from "@rollup/plugin-babel";
-import { DEFAULT_EXTENSIONS } from "@babel/core";
 import replace from "@rollup/plugin-replace";
 import { uglify } from "rollup-plugin-uglify";
 import clear from "rollup-plugin-clear";
 import nodePolyfills from "rollup-plugin-polyfill-node";
+import { eslint } from "rollup-plugin-eslint";
 
 import pkg from "./package.json";
 
+const jsName = "main";
 const production = process.env.NODE_ENV === "production";
 const development = process.env.NODE_ENV === "development";
 const ext = production ? "min.js" : "js";
@@ -33,24 +39,22 @@ let g_d_plugins_01 = [
   clear({
     targets: ["dist"],
   }),
-  // ts 的功能只在于编译出声明文件，所以 target 为 ESNext，编译交给 babel 来做
-  typescript({
-    tsconfig: "./tsconfig.json",
-  }),
+  ,
+  // 验证导入的文件
+  // eslint({
+  //   throwOnError: false, // lint 结果有错误将会抛出异常
+  //   throwOnWarning: false,
+  //   include: ['src/*.ts'],
+  //   exclude: ['node_modules/**', 'dist/**', '*.js'],
+  // }),
   nodePolyfills(),
+  typescript(),
+  commonjs(), // 配合 commnjs 解析第三方模块
   resolve({
     // 将自定义选项传递给解析插件
     customResolveOptions: {
       moduleDirectory: "node_modules",
     },
-  }),
-  commonjs(), // 配合 commnjs 解析第三方模块
-  babel({
-    babelHelpers: "runtime",
-    // 只转换源代码，不运行外部依赖
-    exclude: "node_modules/**",
-    // babel 默认不支持 ts 需要手动添加
-    extensions: [...DEFAULT_EXTENSIONS, ".ts"],
   }),
   json(),
 ];
@@ -65,12 +69,11 @@ let g_d_tasks_list = [].concat(
       d_replace_obj[`${n}.ts`] = n;
     });
     return {
-      //amd为AMD标准，cjs为CommonJS标准，esm\es为ES模块标准，iife为立即调用函数， umd同时支持amd、cjs和iife。
       input: `${g_d_input_path}/${name}.ts`,
       output: [
         // 输出 commonjs 规范的代码
         {
-          file: ` ${g_d_ouput_path}/${name}.js`,
+          file: `${g_d_ouput_path}/${name}.js`,
           format: "cjs",
           name: pkg.name,
         },
@@ -78,6 +81,7 @@ let g_d_tasks_list = [].concat(
         {
           file: `${g_d_ouput_path}/${name}.esm.js`,
           format: "esm",
+          name: pkg.name,
         },
       ],
       external: g_d_3rd_lib_dep.concat(
